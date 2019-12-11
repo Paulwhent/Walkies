@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Walkies.MainPage">
+        
+    <StackLayout>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.25*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="1" BackgroundColor="Green" Text="Walkies!" TextColor="Black" FontSize="80" FontAttributes="Bold" 
+               HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+            <Image Source="photo.png" BackgroundColor="Orange"
+               Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1"/>
+
+            <Image x:Name="PhotoImage" Grid.Row="1" Grid.Column="1"/>
+
+            <!--<Button x:Name="CameraButton" Text="Take Photo" Grid.Row="1" />-->
+
+            <!--<Button x:Name="myButton" Text="BEEP"/>
+            
+            <MediaElement Name="beep" Source="Dog Howling.mp4" Volume="1" AutoPlay="False" MediaFailed="beep_MediaFailed" MediaOpened="beep_MediaOpened"/>
+-->
+            <Button CornerRadius="25" Grid.Row="2" Grid.Column="1" Text="Let's GO!"
+                    FontSize="64" FontAttributes="Bold" x:Name="letsgoButton" Clicked="LetsgoButton_ClickedAsync"/>
+            
+            <RelativeLayout
+                 TranslationY="150" TranslationX="465" >
+                <Label HorizontalTextAlignment="Center" BackgroundColor="Transparent"  TextColor="White" VerticalTextAlignment="Center" 
+                       Text="Cody" FontSize="50" FontAttributes="Bold"/>
+            </RelativeLayout>
+
+        </Grid>
+    </StackLayout>
+   
+</ContentPage>

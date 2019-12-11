@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Walkies.Roscam">
+    <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.25*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.6*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.6*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="1" BackgroundColor="YellowGreen" Text="Roscam" TextColor="Black" FontSize="80" FontAttributes="Bold" 
+               HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+            <Image Source="KnocknacarraLoop.png" BackgroundColor="White"
+               Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1"/>
+
+            <Button CornerRadius="25" Grid.Row="2" Grid.Column="1" Text="Roscam Knowledge"
+                    FontSize="40" FontAttributes="Bold" x:Name="roscamInfoButton" Clicked="RoscamInfoButton_Clicked" />
+
+        </Grid>
+
+    </StackLayout>
+</ContentPage>

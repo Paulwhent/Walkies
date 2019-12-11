@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Walkies.Page1">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button CornerRadius="25" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Image ="photo.png"/>
+                <Button CornerRadius="25" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Text="Knocknacarra" TextColor="white" FontSize="30" FontAttributes="Bold" x:Name="knocknacarraButton" Clicked="KnocknacarraButton_Clicked"/>
+                <Button CornerRadius="25" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Image ="photo.png"/>
+                <Button CornerRadius="25" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="Salthill" TextColor="white" FontSize="30" FontAttributes="Bold" x:Name="salthillButton" Clicked="SalthillButton_Clicked"/>
+                <Button CornerRadius="25" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Image ="photo.png"/>
+                <Button CornerRadius="25" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="Dangan" TextColor="white" FontSize="30" FontAttributes="Bold" x:Name="danganButton" Clicked="DanganButton_Clicked"/>
+                <Button CornerRadius="25" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Image ="photo.png"/>
+                <Button CornerRadius="25" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Text="Roscam" TextColor="white" FontSize="30" FontAttributes="Bold" x:Name="roscamButton" Clicked="RoscamButton_Clicked"/>
+                
+                <Button CornerRadius="25" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Image ="Dogs8.jpg"/>
+                <Button CornerRadius="25" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Text="GALLERY" TextColor="white" FontSize="30" FontAttributes="Bold" x:Name="galleryButton" Clicked="GalleryButton_Clicked"/>
+
+                <Button CornerRadius="25" Grid.Row="4" Grid.Column="1" Text="Home" TextColor="Black" FontSize="30" FontAttributes="Bold" x:Name="homeButton" Clicked="HomeButton_Clicked"/>
+                <Button CornerRadius="25" Grid.Row="4" Grid.Column="2" Text="Settings" TextColor="Black" FontSize="30" FontAttributes="Bold" x:Name="settingsButton" Clicked="SettingsButton_Clicked"/>
+
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

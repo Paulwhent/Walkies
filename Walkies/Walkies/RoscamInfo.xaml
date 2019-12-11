@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Walkies.RoscamInfo">
+    <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.25*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.6*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.6*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="1" BackgroundColor="YellowGreen" Text="Roscam Knowledge" TextColor="Black" FontSize="30" FontAttributes="Bold" 
+               HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+            
+            <Label Grid.Row="1" Grid.Column="1"  BackgroundColor="white" Text="Local Vet Contact: Glenina Vets 091 752 014"
+                       TextColor="Black" FontSize="20" FontAttributes="None" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <Button CornerRadius="25" Grid.Row="2" Grid.Column="1" Text="Home"
+                    FontSize="30" FontAttributes="Bold" x:Name="homeButton" Clicked="HomeButton_Clicked"/>
+
+        </Grid>
+    </StackLayout>
+</ContentPage>
